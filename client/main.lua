@@ -5,8 +5,8 @@ RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
     hasPlayerLoaded = true
 end)
 
-RegisterNetEvent('QBCore:Client:OnPlayerUnload', function()
-    hasPlayerLoaded = false
+RegisterNetEvent('esx:playerLoaded', function() 
+   hasPlayerLoaded = true
 end)
 
 RegisterNetEvent('InteractSound_CL:PlayOnOne', function(soundFile, soundVolume)
